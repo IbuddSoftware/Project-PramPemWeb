@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id" style="background-color:#0A0A0C;color-scheme:dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibudd — Skills</title>
+    <style>html,body{background-color:#0A0A0C}</style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="/" class="logo"><span>I</span>budd</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/skills" class="active">Skills</a>
+            <a href="/projects">Projects</a>
+            <a href="/blog">Blog</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h3 class="section-title">Keahlian</h3>
+            <div class="skill">
+                <div class="skill-name"><span>HTML &amp; CSS</span><span>10%</span></div>
+                <div class="bar" style="--fill:10%"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name"><span>Flask</span><span>5%</span></div>
+                <div class="bar" style="--fill:5%"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name"><span>JavaScript</span><span>0%</span></div>
+                <div class="bar" style="--fill:0%"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name"><span>Python</span><span>7%</span></div>
+                <div class="bar" style="--fill:7%"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name"><span>SQL</span><span>8%</span></div>
+                <div class="bar" style="--fill:8%"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name"><span>Git</span><span>5%</span></div>
+                <div class="bar" style="--fill:5%"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3 class="section-title">Statistik</h3>
+            <div class="stats-grid stagger">
+                <div class="stat-card">
+                    <div class="stat-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 5l-2 14"/></svg></div>
+                    <div class="number">6</div><div class="label">Bahasa Pemrograman</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+                    <div class="number">12+</div><div class="label">Total Proyek</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
+                    <div class="number">3</div><div class="label">Framework Dikuasai</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg></div>
+                    <div class="number">2</div><div class="label">Basis Data</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2007 Ibudd
+    </footer>
+</body>
+</html>

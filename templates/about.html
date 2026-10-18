@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id" style="background-color:#0A0A0C;color-scheme:dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibudd — About</title>
+    <style>html,body{background-color:#0A0A0C}</style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="/" class="logo"><span>I</span>budd</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about" class="active">About</a>
+            <a href="/skills">Skills</a>
+            <a href="/projects">Projects</a>
+            <a href="/blog">Blog</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h3 class="section-title">Tentang Saya</h3>
+            <div class="about-content">
+                <p>Saya adalah <span class="highlight">mahasiswa Informatika</span> yang sedang menjalani matkul pengembangan web. Perjalanan saya dimulai dari rasa penasaran terhadap bagaimana sebuah website bekerja &mdash; dari tombol yang diklik sampai data yang tersimpan di server.</p>
+                <p>Saat ini saya fokus memperdalam <span class="highlight">HTML, CSS, Flask</span>, dan berbagai teknologi pendukung lainnya. Setiap baris kode yang saya tulis adalah langkah untuk menjadi lebih baik.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3 class="section-title">Perjalanan</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="year">2025 &mdash; Sekarang</div>
+                    <h4>Universitas</h4>
+                    <p>Mulai serius belajar pemrograman web dan ikut berbagai organisasi kampus.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">2025</div>
+                    <h4>Lulus SMA &amp; Kenalan dengan Coding</h4>
+                    <p>Lulus SMA, lalu pertama kali kenal HTML &mdash; kaget lihat &lt;h1&gt; bisa jadi tulisan gede di browser.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">2007</div>
+                    <h4>Lahir</h4>
+                    <p>Mulai petualangan di dunia ini.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="quote">
+                "Kita tidak perlu menjadi hebat untuk memulai, tapi kita harus memulai untuk menjadi hebat."
+                <cite>&mdash; Ibudd</cite>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2007 Ibudd
+    </footer>
+</body>
+</html>

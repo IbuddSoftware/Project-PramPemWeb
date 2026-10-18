@@ -1,24 +1,84 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" style="background-color:#0A0A0C;color-scheme:dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PrakPemWeb - Pertemuan 2</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibudd — Home</title>
+    <style>html,body{background-color:#0A0A0C}</style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header><h1>Struktur Project Flask</h1></header>
-  <main>
-    <section>
-      <h2>Struktur Folder:</h2>
-      <ul>
-        <li><strong>app.py</strong> - File utama aplikasi Flask</li>
-        <li><strong>templates/</strong> - Folder untuk file HTML</li>
-        <li><strong>static/css/</strong> - Folder untuk file CSS</li>
-        <li><strong>static/images/</strong> - Folder untuk gambar</li>
-      </ul>
-    </section>
-  </main>
-  <footer><p>Praktikum Pemrograman Web - Pertemuan 2</p></footer>
+    <header>
+        <a href="/" class="logo"><span>I</span>BUDD</a>
+        <nav>
+            <a href="/" class="active">Home</a>
+            <a href="/about">About</a>
+            <a href="/skills">Skills</a>
+            <a href="/projects">Projects</a>
+            <a href="/blog">Blog</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-image">
+                <img src="{{ url_for('static', filename='images/budiganteng.jpg') }}" alt="IBUDD">
+            </div>
+            <div class="hero-text">
+                <p class="tagline">Mahasiswa Informatika</p>
+                <h2>Halo, saya <span class="highlight">IBUDDD</span>.<br>
+                    <span class="typewriter">Saya bikin web.</span></h2>
+                <p>Saya tertarik dengan pengembangan web, basis data, dan jaringan komputer. Saya percaya teknologi bisa jadi alat buat bikin hidup banyak orang lebih gampang.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3 class="section-title">Mata Kuliah</h3>
+            <div class="card-grid stagger">
+                <div class="card-3d">
+                    <h4><span>01</span> Pemrograman Web</h4>
+                    <p>Belajar membangun aplikasi web dari frontend sampai backend menggunakan teknologi modern.</p>
+                </div>
+                <div class="card-3d">
+                    <h4><span>02</span> Basis Data</h4>
+                    <p>Memahami konsep perancangan, implementasi, dan optimasi database relasional.</p>
+                </div>
+                <div class="card-3d">
+                    <h4><span>03</span> Jaringan Komputer</h4>
+                    <p>Mempelajari arsitektur, protokol, dan keamanan jaringan untuk sistem terdistribusi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section stagger">
+            <h3 class="section-title">Statistik Cepat</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg></div>
+                    <div class="number">3</div><div class="label">Semester</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+                    <div class="number">12+</div><div class="label">Proyek</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 5l-2 14"/></svg></div>
+                    <div class="number">5</div><div class="label">Bahasa</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+                    <div class="number">∞</div><div class="label">Rasa Ingin Tahu</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2007 IBUDD
+    </footer>
 </body>
 </html>

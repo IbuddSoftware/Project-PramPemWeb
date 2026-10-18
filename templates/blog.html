@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id" style="background-color:#0A0A0C;color-scheme:dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibudd — Blog</title>
+    <style>html,body{background-color:#0A0A0C}</style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="/" class="logo"><span>I</span>budd</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/skills">Skills</a>
+            <a href="/projects">Projects</a>
+            <a href="/blog" class="active">Blog</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h3 class="section-title">Catatan</h3>
+            <div class="blog-grid stagger">
+                <div class="blog-card">
+                    <div class="date">5 Okt 2025</div>
+                    <h4>CSS Grid vs Flexbox</h4>
+                    <p>Kapan harus pake Grid, kapan harus pake Flexbox? Simpelnya: Grid buat 2 dimensi, Flexbox buat 1 dimensi.</p>
+                    <span class="tag">CSS</span>
+                </div>
+                <div class="blog-card">
+                    <div class="date">2 Okt 2025</div>
+                    <h4>Flask buat Pemula</h4>
+                    <p>Flask itu micro-framework Python buat web. Ringan, fleksibel, dan cocok buat belajar routing, template, dan static files.</p>
+                    <span class="tag">Flask</span>
+                </div>
+                <div class="blog-card">
+                    <div class="date">28 Sep 2025</div>
+                    <h4>Kenapa Dark Mode?</h4>
+                    <p>Dark mode bukan cuma soal estetika. Lebih hemat baterai di OLED, lebih nyaman di mata pas malam hari.</p>
+                    <span class="tag">UI/UX</span>
+                </div>
+                <div class="blog-card">
+                    <div class="date">20 Sep 2025</div>
+                    <h4>CSS Animation Tanpa JS</h4>
+                    <p>Dengan @keyframes, transition, dan animation-delay, kita bisa bikin animasi kompleks tanpa satupun baris JavaScript.</p>
+                    <span class="tag">CSS</span>
+                </div>
+                <div class="blog-card">
+                    <div class="date">15 Sep 2025</div>
+                    <h4>Variable CSS (Custom Properties)</h4>
+                    <p>CSS variables bikin styling jadi konsisten. Ubah satu nilai di :root, efek ke seluruh halaman.</p>
+                    <span class="tag">CSS</span>
+                </div>
+                <div class="blog-card">
+                    <div class="date">10 Sep 2025</div>
+                    <h4>Struktur Folder Flask</h4>
+                    <p>Templates/, static/, app.py &mdash; itu aja udah cukup buat project kecil. Flask otomatis nyari file di folder itu.</p>
+                    <span class="tag">Flask</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2007 IBUDD
+    </footer>
+</body>
+</html>
